@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- css atached  -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- container  -->
+    <div id="container">
+        <h1>
+            Calculator
+        </h1>
+        <div id="formbar">
+            <!-- formbar -->
+            <form id="form">
+                <!-- screenbar -->
+                <input type="text" name="screen" id="screen"> 
+                <br>
+
+                <!-- Buttons -->
+                <input type="button" value="(" class="btn" onclick="valuesButton(this)">
+                <input type="button" value=")" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="C" class="btn" onclick="Clear()">
+                <input type="button" value="/" class="btn" onclick="valuesButton(this)"> 
+                <br>
+
+                <input type="button" value="7" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="8" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="9" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="*" class="btn" onclick="valuesButton(this)">
+                 <br>
+
+                <input type="button" value="4" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="5" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="6" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="-" class="btn" onclick="valuesButton(this)">
+                <br>
+
+                <input type="button" value="1" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="2" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="3" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="+" class="btn" onclick="valuesButton(this)">
+                <br>
+
+                <input type="button" value="0" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="00" class="btn" onclick="valuesButton(this)">
+                <input type="button" value="." class="btn" onclick="valuesButton(this)">
+                <input type="button" value="=" class="btn" onclick="calculate()">
+                <br>
+            </form>
+        </div>
+    </div>
+
+    <!-- java script atached  -->
+    <script src="Java Script/script.js"></script>
+</body>
+</html>
